@@ -47,6 +47,13 @@ CFLAGS_DIAG := \
 CFLAGS_DBG := \
   -g
 
+CFLAGS_LIB9P := \
+  -Wno-padded \
+  -Wno-gnu-zero-variadic-macro-arguments \
+  -Wno-format-nonliteral \
+  -Wno-unused-macros \
+  -Wno-sign-conversion
+
 CFLAGS := \
   -arch x86_64 \
   -x c \
